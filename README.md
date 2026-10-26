@@ -1,4 +1,4 @@
-# HAVOC-Profiler
+# Havoc-Profiler
 
 **Histopathology foundation model framework for refined risk stratification in diffuse gliomas.**
 
@@ -6,7 +6,7 @@
 
 ## Overview
 
-This repository contains the official codebase and inference pipelines for the HAVOC-Profiler methodology, accompanying the paper:
+This repository contains the official codebase and inference pipelines for the Havoc-Profiler methodology, accompanying the paper:
 
 > Alvi, A., Leon, A. J., Oreopoulos, D. G., Babei, P., Paliwal, A., Hu, J., Kamski-Hennekam, E., & Diamandis, P. (n.d.).  
 > *Refined risk stratification in diffuse gliomas using histopathology foundation models* [Manuscript submitted for publication].
