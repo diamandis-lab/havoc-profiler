@@ -1,0 +1,56 @@
+[
+  {
+    "class_name": "Blank_space",
+    "class_id": 0,
+    "color_scheme": "exclude",
+    "is_tumor": false
+  },
+  {
+    "class_name": "Crush_artifact",
+    "class_id": 1,
+    "color_scheme": "exclude",
+    "is_tumor": false
+  },
+  {
+    "class_name": "Fibrocollagenous_tissue",
+    "class_id": 2,
+    "color_scheme": "chocolate4",
+    "is_tumor": false
+  },
+  {
+    "class_name": "Glial_histology",
+    "class_id": 3,
+    "color_scheme": "purple",
+    "is_tumor": true
+    },
+  {
+    "class_name": "Gray_matter",
+    "class_id": 4,
+    "color_scheme": "darkgreen",
+    "is_tumor": false
+  },
+  {
+    "class_name": "Hemorrhage",
+    "class_id": 5,
+    "color_scheme": "lightpink",
+    "is_tumor": false
+  },
+  {
+    "class_name": "Necrosis",
+    "class_id": 6,
+    "color_scheme": "grey60",
+    "is_tumor": false
+  },
+  {
+    "class_name": "Normal_hematolymphoid_tissue",
+    "class_id": 7,
+    "color_scheme": "blue",
+    "is_tumor": false
+  },
+  {
+    "class_name": "White_matter",
+    "class_id": 8,
+    "color_scheme": "green",
+    "is_tumor": false
+  }
+]
