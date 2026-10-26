@@ -82,14 +82,6 @@ RUN pip install pyopenssl opencv-python docopt --upgrade \
     && pip install havoc-clustering==0.0.20 \
     && wget "https://havoc.s3.amazonaws.com/74_class_model.h5" -P /app/model_cnn/
 
-#RUN apt install -y --no-install-recommends software-properties-common \
-#      && wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | tee -a /etc/apt/trusted.gpg.d/cran_ubuntu_key.asc \
-#    	&& add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/' \
-#    	&& apt update && apt install -y --no-install-recommends r-base \
-#    	&& R -e "install.packages(c('docopt', 'reshape2', 'ggplot2', 'readr', 'dplyr', 'data.table'))" \
-#    	&& apt install -y libmagick++-dev libcurl4-openssl-dev libjpeg-dev \
-#      && R -e "install.packages(c('cowplot', 'jpeg', 'jsonlite', 'magick', 'paletteer', 'xgboost'))"
-
 RUN apt-get update && apt-get install -y --no-install-recommends \
         software-properties-common \
     && add-apt-repository universe \
@@ -132,8 +124,6 @@ ENV TRANSFORMERS_OFFLINE=1
 COPY ./src/ /app/src/
 COPY ./model_XGBoost/ /app/model_XGBoost/
 
-
-
 RUN mkdir -p /app/inputs \
     && mkdir -p /app/outputs \
     && mkdir -p /data/havoc_profiler/svs_files \
@@ -154,4 +144,4 @@ ENTRYPOINT ["python", "/app/src/app_codido.py"]
 
 # export HF_TOKEN='hf_xxxxx'
 # cd /data/docker/havoc-profiler-main
-# docker build --secret id=hf_token,env=HF_TOKEN -t havoc-profiler-main:01 .
+# docker build --secret id=hf_token,env=HF_TOKEN -t havoc-profiler:01 .
