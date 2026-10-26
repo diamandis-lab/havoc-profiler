@@ -15,7 +15,7 @@ This repository contains the official codebase and inference pipelines for the H
 
 ## Live Application
 
-A web-hosted version is deployed on CODIDO for interactive inference and exploration:
+A web-hosted version is deployed on CODIDO for analysis of WSIs of diffuse gliomas:
 
 - **Launch:** [HAVOC-Profiler on CODIDO](https://www.codido.co/marketplace/browse?RepoInfo%5Bquery%5D=HAVOC-Profiler)
 
